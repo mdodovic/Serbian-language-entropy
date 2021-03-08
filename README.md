@@ -1,3 +1,3 @@
-#Serbian-language-entropy
+# Serbian-language-entropy
 
-Calculating the entropy 
+Maximal entropy ```H_{max}``` is calculated 
