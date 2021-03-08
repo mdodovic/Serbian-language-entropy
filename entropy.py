@@ -9,23 +9,36 @@ for line in text_file:
             characters[str(character)] += 1
         else:
             characters[str(character)] = 1 
-
+            
 text_file.close()
-
-for character, number_of_repetitions in characters.items():
-    print(character," : ", number_of_repetitions)
-
 
 q = len(characters)
 print("Number of different elements: ", q)
 
+
+
+character_frequency = {}
+for character, number_of_repetitions in characters.items():
+    character_frequency[character] = number_of_repetitions / q 
+
+for character, number_of_repetitions in characters.items():
+    print(character,"(",str(type(character)),") : ", number_of_repetitions)
+
+
+for character, frequency in character_frequency.items():
+    print(character,"(",str(type(character)),") : ", frequency)
+
+H0 = 0
+
+for character, frequency in character_frequency.items():
+    H0 += frequency * math.log2(frequency)
+
+H0 = -H0
+
 Hmax = math.log2(q)
 print("Hmax: ", Hmax) 
-print("Hmax: ", math.log2(26)) 
 
-print("Hmax: ", math.log2(27)) 
-
-print("Hmax: ", math.log2(32)) 
+print("H0: ", H0) 
 
 
 
