@@ -53,6 +53,7 @@ for character, frequency in character_frequency.items():
 H0 = -H0
 print("H0: ", H0) 
 
+# calcuate the entropy of the source with memory
 
 
 

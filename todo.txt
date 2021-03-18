@@ -1,0 +1,50 @@
+1.
+
+
+Zato je potrebno najpre da se upoznate sa definicijom tog benčmarka:
+http://www.tpc.org/tpce/default5.asp
+http://tpc.org/tpc_documents_current_versions/pdf/tpc-e_v1.14.0.pdf
+
+Ova specifikacija je izuzetno obiman dokument, ali ga je lako čitati.
+Osim toga, nije neophodno udubljivati se u sve delove.
+Centralni deo je opis transakcija (Clause 3, strana 73).
+Tekst pre toga je dobro pročitati samo površno i informativno, radi razumevanja konteksta,
+a ostatak je uglavnom nepotreban.
+Treba imati u vidu da se uopšte ne treba udubljivati u značenje i smisao cele ove aplikacije i
+baze podataka, mogu se posmatrati strogo formalno, “mašinski”, onako kako mašina to posmatra,
+jer naš cilj i jeste da osmišljavamo automatizovane postupke, 
+a najbolji način za to jeste da se čovek ponaša kao automat u osmišljavanju i testiranju sopstvenih ideja.
+Osim toga, verovatno ćemo se fokusirati na manji broj transakcija, njih 3-4 odabranih,
+ne moramo da sprovodimo svih 9.
+
+
+2.
+
+Polazna ideja denormalizacije opisana je u radu kolege Kojića (na čemu je doktorirao),
+objavljen u jednom od najuglednijih časopisa iz naše struke (IEEE Transactions):
+https://ieeexplore.ieee.org/document/8692623
+Ceo tekst je ovde: 
+http://home.etf.rs/~nemanja.kojic/TKDE-2018-04-0373.R2.pdf
+I ovaj tekst ne treba proučavati detaljno: najvažnije je razumeti ideju opisanu u prvom delu,
+prva četiri poglavlja, ostatak može da se pročita samo informativno.
+
+Razrada i uopštenje ideje opisana je u radu koji šaljem u prilogu.
+I ovde je važno dobro razumeti osnovnu ideju koja je neformalno opisana u prva dva poglavlja,
+ostatak pročitati samo informativno, ne treba se udubljiavti u formalizme, ali ako možete da ih razumete, nije loše.
+Važno: Ovaj tekst još nije objavljen, podnet je za objavljivanje, pa je zato još uvek poverljiv.
+Nemojte ga slati nikome bez moje dozvole, a mmožete ga koristiti samo lično za potrebe ovog rada.
+
+Na kraju, treba odabrati bazu na kojoj ćemo raditi eksperimente.
+Predlažem da to bude Oracle ili MS SQL Server, za koje postoji besplatne verzije koja može da se koristi za razvoj.
+Materijalizovani pogledi u SQL Serveru nazivaju se “indexed views” i opisani su ovde:
+https://docs.microsoft.com/en-us/sql/relational-databases/views/create-indexed-views?view=sql-server-ver15 
+a za Oracle:
+https://docs.oracle.com/cd/B19306_01/server.102/b14200/statements_6002.htm 
+Ako vam za ovo bude potrebna pomoć, javite se.
+
+Svakako javite ako budete imali ikakav problem ili pitanje, a čim budete proučili ove polazne materijale,
+ja bih vam poslao dalja uputstva za to šta konkretno treba uraditi. Tada bismo verovatno mogli i da se vidimo,
+jer je verovatno lakše da vam usmeno objasnim principe i zadatak.
+
+Pozdrav,
+Dragan
