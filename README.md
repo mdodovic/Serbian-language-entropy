@@ -1,6 +1,6 @@
 # Serbian-language-entropy
 
-Serbian Language entropy is calculated by analyzing large text written in Serbian Latin. 
+Serbian Language entropy is calculated by analyzing large text Na Drini Ćuprija written in Serbian Latin. 
 
 Maximal entropy H<sub>max</sub> is calculated with the assumption that every symbol has the same occurrence probability.
 
