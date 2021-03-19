@@ -2,7 +2,7 @@
 
 Serbian Language entropy is calculated by analyzing large text Na Drini Ćuprija written in Serbian Latin. 
 
-Maximal entropy H<sub>max</sub> is calculated with the assumption that every symbol has the same occurrence probability.
+Maximal entropy <b>H<sub>max</sub></b> is calculated with the assumption that every symbol has the same occurrence probability.
 
 The Entropy H<sub>0</sub> of the text is calculated as the standard entropy of the source without memory. The probability of a particular symbol is calculated as the ratio of the number of its occurrences and the total number of symbols in the text.
 
